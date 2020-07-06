@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>A Simple ToDo List App</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+  </head>
+  <body>
+    <h1>ToDo List</h1>
+    <form action="/addItem" method="post">
+      <input type="text" name="newItem" placeholder="Add Task">
+      <button style="font-size:0.8rem" type="submit" name="button">Submit</button>
+    </form>
+
+    <% for(var i=0;i<tasks.length;i++){ %>
+      <li> <%= tasks[i] %> </li>
+    <% } %>
+
+  </body>
+</html>
